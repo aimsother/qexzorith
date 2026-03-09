@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO: qexzorith -->
+  <title>qexzorith</title>
+  <meta name="description" content="qexzorith — official website.">
+  <meta name="keywords" content="qexzorith, qexzorith aims, qexzorith finance">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="qexzorith">
+  <meta property="og:description" content="qexzorith — official website.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f3;
+      font-family: 'Georgia', serif;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hint {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      color: #aaa;
+      text-transform: uppercase;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 18px 52px;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      color: #f5f5f3;
+      background: #1a1a1a;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    button:hover {
+      background: #333333;
+    }
+
+    button:hover .arrow {
+      transform: translateX(5px);
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+
+    .arrow {
+      display: inline-block;
+      font-size: 20px;
+      transition: transform 0.2s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- qexzorith -->
+  <div class="wrapper">
+    <p class="hint">Click to proceed</p>
+    <button id="goBtn">Go <span class="arrow">→</span></button>
+  </div>
+
+  <script>
+    const url = "https://aims.finance";
+    document.getElementById("goBtn").addEventListener("click", function () {
+      window.location.href = url;
+    });
+  </script>
+
+</body>
+</html>
